@@ -1,0 +1,11 @@
+#app
+fastapi
+uvicorn 
+pydantic 
+
+#db
+sqlalchemy 
+#authentication
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
