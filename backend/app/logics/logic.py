@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from models import model
-from schemas import schema
+from app.models import model
+from app.schemas import schema
 
 def create_user(db:Session,user:schema.UserCreate):
     db_user=model.User(username=user.username,hashed_password=user.hashed_password,phone_number=user.phone_number)
